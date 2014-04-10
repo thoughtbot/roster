@@ -12,6 +12,7 @@
 		566742F281F944428E41E3E8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EE161E245345C8ABB738E9 /* libPods.a */; };
 		5B73EB8016544C449F778346 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE69C04C226943848E10B7C8 /* main.m */; };
 		CD86DF53962E4E7586077860 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1883801D260E4861BF2E3E6B /* Images.xcassets */; };
+		F8EDDD3118F73BAE003D9706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EDDD3018F73BAE003D9706 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		CE69C04C226943848E10B7C8 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6FC5E8B541A4CB3AE23C43C /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		F84E50BC7CA541259F7D65CA /* Roster-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Roster-Prefix.pch"; sourceTree = "<group>"; };
+		F8EDDD3018F73BAE003D9706 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		4F348F9F0E3945738B0962B0 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				F8EDDD3018F73BAE003D9706 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD86DF53962E4E7586077860 /* Images.xcassets in Resources */,
+				F8EDDD3118F73BAE003D9706 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
