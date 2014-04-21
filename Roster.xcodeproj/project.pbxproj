@@ -12,7 +12,11 @@
 		566742F281F944428E41E3E8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EE161E245345C8ABB738E9 /* libPods.a */; };
 		5B73EB8016544C449F778346 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE69C04C226943848E10B7C8 /* main.m */; };
 		CD86DF53962E4E7586077860 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1883801D260E4861BF2E3E6B /* Images.xcassets */; };
+		F8163B5818F848CB005CE8EB /* RSTEmployeesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8163B5718F848CB005CE8EB /* RSTEmployeesViewController.m */; };
+		F8163B5B18F85A6F005CE8EB /* RSTEmployeeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8163B5A18F85A6F005CE8EB /* RSTEmployeeCell.m */; };
 		F8EDDD3118F73BAE003D9706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EDDD3018F73BAE003D9706 /* Main.storyboard */; };
+		F8FEE4C819059410001C223A /* RSTEmployeesViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FEE4C719059410001C223A /* RSTEmployeesViewModel.m */; };
+		F8FEE4CB1905979D001C223A /* RSTEmployeesViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FEE4CA1905979D001C223A /* RSTEmployeesViewModelSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +43,15 @@
 		CBCD2E1689F64F9E97B436F4 /* Pods-unit_tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.xcconfig"; path = "Pods/Pods-unit_tests.xcconfig"; sourceTree = "<group>"; };
 		CE69C04C226943848E10B7C8 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6FC5E8B541A4CB3AE23C43C /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		F8163B5618F848CB005CE8EB /* RSTEmployeesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTEmployeesViewController.h; sourceTree = "<group>"; };
+		F8163B5718F848CB005CE8EB /* RSTEmployeesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTEmployeesViewController.m; sourceTree = "<group>"; };
+		F8163B5918F85A6F005CE8EB /* RSTEmployeeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTEmployeeCell.h; sourceTree = "<group>"; };
+		F8163B5A18F85A6F005CE8EB /* RSTEmployeeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTEmployeeCell.m; sourceTree = "<group>"; };
 		F84E50BC7CA541259F7D65CA /* Roster-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Roster-Prefix.pch"; sourceTree = "<group>"; };
 		F8EDDD3018F73BAE003D9706 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F8FEE4C619059410001C223A /* RSTEmployeesViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTEmployeesViewModel.h; sourceTree = "<group>"; };
+		F8FEE4C719059410001C223A /* RSTEmployeesViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTEmployeesViewModel.m; sourceTree = "<group>"; };
+		F8FEE4CA1905979D001C223A /* RSTEmployeesViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTEmployeesViewModelSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +77,7 @@
 		0E185A7E00E542719713A73C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				F8FEE4CA1905979D001C223A /* RSTEmployeesViewModelSpec.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -84,6 +96,8 @@
 		24EC83615B304C0FABE32901 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F8163B5618F848CB005CE8EB /* RSTEmployeesViewController.h */,
+				F8163B5718F848CB005CE8EB /* RSTEmployeesViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -197,6 +211,7 @@
 				2F0C03659E8845C6B3062C57 /* DataSources */,
 				277B8F8012B04A599025D503 /* Delegates */,
 				C524230941C447F89D7DCF90 /* Models */,
+				F8FEE4C5190593E2001C223A /* ViewModels */,
 				24EC83615B304C0FABE32901 /* ViewControllers */,
 				EA5F0CFEE81547D6B9DC3A87 /* Views */,
 			);
@@ -221,6 +236,8 @@
 		EA5F0CFEE81547D6B9DC3A87 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F8163B5918F85A6F005CE8EB /* RSTEmployeeCell.h */,
+				F8163B5A18F85A6F005CE8EB /* RSTEmployeeCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +254,15 @@
 			children = (
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		F8FEE4C5190593E2001C223A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F8FEE4C619059410001C223A /* RSTEmployeesViewModel.h */,
+				F8FEE4C719059410001C223A /* RSTEmployeesViewModel.m */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8FEE4CB1905979D001C223A /* RSTEmployeesViewModelSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +446,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				15A47A2C99544754AD4300B9 /* RSTAppDelegate.m in Sources */,
+				F8FEE4C819059410001C223A /* RSTEmployeesViewModel.m in Sources */,
+				F8163B5B18F85A6F005CE8EB /* RSTEmployeeCell.m in Sources */,
+				F8163B5818F848CB005CE8EB /* RSTEmployeesViewController.m in Sources */,
 				5B73EB8016544C449F778346 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

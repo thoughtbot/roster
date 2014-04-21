@@ -4,6 +4,7 @@ pod 'TBDirectory'
 
 target :unit_tests, :exclusive => true do
   link_with 'UnitTests'
+  pod 'TBDirectory/Testing'
   pod 'Specta'
   pod 'Expecta'
   pod 'OCMock'
