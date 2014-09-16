@@ -5,7 +5,7 @@ pod 'TBDirectory'
 target :unit_tests, :exclusive => true do
   link_with 'UnitTests'
   pod 'TBDirectory/Testing'
-  pod 'Specta'
+  pod 'Specta', :git => 'https://github.com/specta/specta.git', :branch => '0.3-wip'
   pod 'Expecta'
   pod 'OCMock'
 end
