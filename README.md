@@ -4,11 +4,19 @@ thoughtbot's starting lineup
 
 ## Setup ##
 
-We're using CocoaPods. You're going to want to run
+Run `bin/setup`
 
-    pod install
+This will:
 
-If you don't have access to `TBDirectory`, you'll need to add our private
-repo:
+ - Install the gem dependencies
+ - Add the `thoughtbot` pod repo (if it doesn't already exist)
+ - Install the pod dependencies
 
-    pod repo add thoughtbot git@github.com:thoughtbot/cocoapod-specs.git
+## Testing ##
+
+Run `bin/test`
+
+This will run the tests from the command line, and pipe the result through
+[XCPretty][].
+
+[XCPretty]: https://github.com/supermarin/xcpretty

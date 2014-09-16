@@ -1,37 +1,19 @@
 PODS:
-  - Expecta (0.3.0)
-  - OCMock (2.2.4)
   - OHHTTPStubs (3.1.5):
     - OHHTTPStubs/Core
   - OHHTTPStubs/Core (3.1.5)
-  - Specta (0.2.99)
   - TBDirectory (0.3.1):
     - TBDirectory/Core
   - TBDirectory/Core (0.3.1)
   - TBDirectory/Testing (0.3.1):
     - OHHTTPStubs
-    - XCTest+OHHTTPStubSuiteCleanUp
-  - XCTest+OHHTTPStubSuiteCleanUp (1.0.0):
-    - OHHTTPStubs
 
 DEPENDENCIES:
-  - Expecta
-  - OCMock
-  - Specta (from `https://github.com/specta/specta.git`, branch `0.3-wip`)
   - TBDirectory
   - TBDirectory/Testing
 
-EXTERNAL SOURCES:
-  Specta:
-    :branch: 0.3-wip
-    :git: https://github.com/specta/specta.git
-
 SPEC CHECKSUMS:
-  Expecta: ce8a51b9fad15a2cd573b291cb2909aaed865350
-  OCMock: 6db79185520e24f9f299548f2b8b07e41d881bd5
   OHHTTPStubs: c1e362552b71b81e1deb7a80f44c51585b946c43
-  Specta: 85ea870d8886e0bbf92ed8df112823bf3eb07322
-  TBDirectory: 923eafe893e1eed22ad866a0a62f0c721b9aa7d3
-  XCTest+OHHTTPStubSuiteCleanUp: 16f0278ca4d489896745e6f4f71b8b3efa93cba8
+  TBDirectory: f7ae673d44fd800dce3344eeb96e7f9ccc8d0cd1
 
 COCOAPODS: 0.33.1
