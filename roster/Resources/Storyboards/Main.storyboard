@@ -2,9 +2,10 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="r23-bx-Q5o">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Roster-->
         <scene sceneID="SrK-SV-NqM">
             <objects>
                 <tableViewController id="o9O-Gh-lS6" sceneMemberID="viewController">
@@ -15,30 +16,49 @@
                         <sections>
                             <tableViewSection id="hef-7f-36X">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="SH4-00-e94" style="IBUITableViewCellStyleDefault" id="6I7-zs-4kK">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="6I7-zs-4kK">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6I7-zs-4kK" id="aaI-XI-JL2">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SH4-00-e94">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gordon Fontenot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oa-VU-dW2">
+                                                    <rect key="frame" x="68" y="8" width="145" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8b-ad-ed6">
+                                                    <rect key="frame" x="68" y="39" width="93" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="02R-h6-cXb">
+                                                    <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="0Xx-l9-t9y"/>
+                                                        <constraint firstAttribute="height" constant="50" id="yEW-t2-LOG"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boston" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARs-tQ-svh">
+                                                    <rect key="frame" x="537" y="22" width="55" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="BmR-Lf-wm9">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BmR-Lf-wm9" id="nl8-Es-i9y">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="uAM-VM-J00">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uAM-VM-J00" id="ERO-49-qbZ">
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <constraints>
+                                                <constraint firstItem="2Oa-VU-dW2" firstAttribute="leading" secondItem="02R-h6-cXb" secondAttribute="trailing" constant="10" id="6mH-F9-Wgf"/>
+                                                <constraint firstItem="n8b-ad-ed6" firstAttribute="top" secondItem="2Oa-VU-dW2" secondAttribute="bottom" constant="8" id="9Kp-yA-XIS"/>
+                                                <constraint firstItem="2Oa-VU-dW2" firstAttribute="top" secondItem="02R-h6-cXb" secondAttribute="top" id="Gul-Qe-2rb"/>
+                                                <constraint firstItem="02R-h6-cXb" firstAttribute="leading" secondItem="aaI-XI-JL2" secondAttribute="leadingMargin" id="ONL-Pp-TU8"/>
+                                                <constraint firstAttribute="centerY" secondItem="02R-h6-cXb" secondAttribute="centerY" id="PGy-Yg-d0K"/>
+                                                <constraint firstAttribute="centerY" secondItem="ARs-tQ-svh" secondAttribute="centerY" id="ZNL-g2-ajR"/>
+                                                <constraint firstItem="02R-h6-cXb" firstAttribute="top" secondItem="aaI-XI-JL2" secondAttribute="topMargin" id="cew-cZ-Xx8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="02R-h6-cXb" secondAttribute="bottom" id="eCr-p6-y6c"/>
+                                                <constraint firstItem="n8b-ad-ed6" firstAttribute="leading" secondItem="2Oa-VU-dW2" secondAttribute="leading" id="jLL-1J-2Tx"/>
+                                                <constraint firstItem="ARs-tQ-svh" firstAttribute="trailing" secondItem="aaI-XI-JL2" secondAttribute="trailingMargin" id="xJa-EG-xsb"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -49,7 +69,7 @@
                             <outlet property="delegate" destination="o9O-Gh-lS6" id="ZyI-cc-vPd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="EyU-UP-qGz"/>
+                    <navigationItem key="navigationItem" title="Roster" id="EyU-UP-qGz"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pgh-rU-Atk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
