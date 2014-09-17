@@ -9,10 +9,17 @@
 /* Begin PBXBuildFile section */
 		34B7A3553E5044E0851CFF2F /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82218AF580F9488ABEF05E92 /* libPods-unit_tests.a */; };
 		D7615D4E4357469D9B308FB0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6777A195338246A5ADDD71FC /* libPods.a */; };
+		F802B5C719CA1A93009202FC /* TBEmployee+Gravatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802B5C619CA1A93009202FC /* TBEmployee+Gravatar.swift */; };
+		F802B5C919CA1AE9009202FC /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802B5C819CA1AE9009202FC /* Global.swift */; };
+		F802B5CB19CA1B8D009202FC /* TBEmployeeRole+Printable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802B5CA19CA1B8D009202FC /* TBEmployeeRole+Printable.swift */; };
+		F802B5CD19CA1BBA009202FC /* AsyncLoadingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802B5CC19CA1BBA009202FC /* AsyncLoadingImageView.swift */; };
+		F802B5CF19CA1C10009202FC /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802B5CE19CA1C10009202FC /* EmployeeCell.swift */; };
+		F802B5D119CA2250009202FC /* NSURLSession+FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802B5D019CA2250009202FC /* NSURLSession+FetchData.swift */; };
 		F824D63819C8BC2F00537282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824D61E19C8BC2F00537282 /* AppDelegate.swift */; };
 		F824D63F19C8BC2F00537282 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F824D62B19C8BC2F00537282 /* Images.xcassets */; };
 		F824D65019C8BD9A00537282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F824D64F19C8BD9A00537282 /* Main.storyboard */; };
 		F824D65219C8BE7A00537282 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F824D65119C8BE7A00537282 /* Launch Screen.xib */; };
+		F87B7A5319C8DBCD00D310EF /* EmployeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B7A5219C8DBCD00D310EF /* EmployeesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +37,12 @@
 		6777A195338246A5ADDD71FC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		82218AF580F9488ABEF05E92 /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56827488694440AB6D812D4 /* Pods-unit_tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.xcconfig"; path = "Pods/Pods-unit_tests.xcconfig"; sourceTree = "<group>"; };
+		F802B5C619CA1A93009202FC /* TBEmployee+Gravatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TBEmployee+Gravatar.swift"; sourceTree = "<group>"; };
+		F802B5C819CA1AE9009202FC /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		F802B5CA19CA1B8D009202FC /* TBEmployeeRole+Printable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TBEmployeeRole+Printable.swift"; sourceTree = "<group>"; };
+		F802B5CC19CA1BBA009202FC /* AsyncLoadingImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncLoadingImageView.swift; sourceTree = "<group>"; };
+		F802B5CE19CA1C10009202FC /* EmployeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		F802B5D019CA2250009202FC /* NSURLSession+FetchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLSession+FetchData.swift"; sourceTree = "<group>"; };
 		F824D5EF19C8B7D700537282 /* roster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F824D60419C8B7D700537282 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F824D61E19C8BC2F00537282 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +51,8 @@
 		F824D64819C8BC3F00537282 /* UnitTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		F824D64F19C8BD9A00537282 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F824D65119C8BE7A00537282 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		F87B7A5219C8DBCD00D310EF /* EmployeesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesViewController.swift; sourceTree = "<group>"; };
+		F87B7A5919C8DEBC00D310EF /* roster-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "roster-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +90,8 @@
 				F824D61419C8BC2E00537282 /* roster */,
 				F824D64419C8BC3F00537282 /* UnitTests */,
 				F824D5F019C8B7D700537282 /* Products */,
-				43F0A4DA10FF497E9C74B9CD /* Pods.xcconfig */,
 				2B6B47C5F7954F40A2320128 /* Frameworks */,
+				43F0A4DA10FF497E9C74B9CD /* Pods.xcconfig */,
 				F56827488694440AB6D812D4 /* Pods-unit_tests.xcconfig */,
 			);
 			indentWidth = 4;
@@ -100,6 +115,7 @@
 				F824D62519C8BC2F00537282 /* Constants */,
 				F824D62719C8BC2F00537282 /* Extensions */,
 				F824D62919C8BC2F00537282 /* Resources */,
+				F802B5C819CA1AE9009202FC /* Global.swift */,
 			);
 			path = roster;
 			sourceTree = "<group>";
@@ -149,6 +165,7 @@
 		F824D62119C8BC2F00537282 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F87B7A5219C8DBCD00D310EF /* EmployeesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -156,6 +173,8 @@
 		F824D62319C8BC2F00537282 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F802B5CC19CA1BBA009202FC /* AsyncLoadingImageView.swift */,
+				F802B5CE19CA1C10009202FC /* EmployeeCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +189,9 @@
 		F824D62719C8BC2F00537282 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F802B5C619CA1A93009202FC /* TBEmployee+Gravatar.swift */,
+				F802B5CA19CA1B8D009202FC /* TBEmployeeRole+Printable.swift */,
+				F802B5D019CA2250009202FC /* NSURLSession+FetchData.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -196,6 +218,7 @@
 		F824D62E19C8BC2F00537282 /* Other-Sources */ = {
 			isa = PBXGroup;
 			children = (
+				F87B7A5919C8DEBC00D310EF /* roster-Bridging-Header.h */,
 				F824D63019C8BC2F00537282 /* roster-Info.plist */,
 			);
 			path = "Other-Sources";
@@ -415,7 +438,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F802B5CD19CA1BBA009202FC /* AsyncLoadingImageView.swift in Sources */,
+				F802B5C919CA1AE9009202FC /* Global.swift in Sources */,
+				F802B5CF19CA1C10009202FC /* EmployeeCell.swift in Sources */,
+				F802B5C719CA1A93009202FC /* TBEmployee+Gravatar.swift in Sources */,
+				F87B7A5319C8DBCD00D310EF /* EmployeesViewController.swift in Sources */,
 				F824D63819C8BC2F00537282 /* AppDelegate.swift in Sources */,
+				F802B5D119CA2250009202FC /* NSURLSession+FetchData.swift in Sources */,
+				F802B5CB19CA1B8D009202FC /* TBEmployeeRole+Printable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,9 +579,12 @@
 			baseConfigurationReference = 43F0A4DA10FF497E9C74B9CD /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "roster/Resources/Other-Sources/roster-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "roster/Resources/Other-Sources/roster-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -560,10 +593,12 @@
 			baseConfigurationReference = 43F0A4DA10FF497E9C74B9CD /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "roster/Resources/Other-Sources/roster-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "roster/Resources/Other-Sources/roster-Bridging-Header.h";
 			};
 			name = Release;
 		};
