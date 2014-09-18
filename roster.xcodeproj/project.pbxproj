@@ -19,6 +19,7 @@
 		F824D63F19C8BC2F00537282 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F824D62B19C8BC2F00537282 /* Images.xcassets */; };
 		F824D65019C8BD9A00537282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F824D64F19C8BD9A00537282 /* Main.storyboard */; };
 		F824D65219C8BE7A00537282 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F824D65119C8BE7A00537282 /* Launch Screen.xib */; };
+		F87AFA4F19CB490E00EDEAE3 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87AFA4E19CB490E00EDEAE3 /* ImageCache.swift */; };
 		F87B7A5319C8DBCD00D310EF /* EmployeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B7A5219C8DBCD00D310EF /* EmployeesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		F824D64819C8BC3F00537282 /* UnitTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		F824D64F19C8BD9A00537282 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F824D65119C8BE7A00537282 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		F87AFA4E19CB490E00EDEAE3 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		F87B7A5219C8DBCD00D310EF /* EmployeesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesViewController.swift; sourceTree = "<group>"; };
 		F87B7A5919C8DEBC00D310EF /* roster-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "roster-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +160,7 @@
 		F824D61F19C8BC2F00537282 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F87AFA4E19CB490E00EDEAE3 /* ImageCache.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				F802B5CD19CA1BBA009202FC /* AsyncLoadingImageView.swift in Sources */,
 				F802B5C919CA1AE9009202FC /* Global.swift in Sources */,
 				F802B5CF19CA1C10009202FC /* EmployeeCell.swift in Sources */,
+				F87AFA4F19CB490E00EDEAE3 /* ImageCache.swift in Sources */,
 				F802B5C719CA1A93009202FC /* TBEmployee+Gravatar.swift in Sources */,
 				F87B7A5319C8DBCD00D310EF /* EmployeesViewController.swift in Sources */,
 				F824D63819C8BC2F00537282 /* AppDelegate.swift in Sources */,
