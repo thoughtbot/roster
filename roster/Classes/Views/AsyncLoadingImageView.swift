@@ -15,6 +15,8 @@ class AsyncLoadingImageView: UIImageView {
             return
         }
 
+        image = .None
+
         currentRequest = NSURLSession.fetchDataFromURL(url) { data in
             dispatch_main_async {
                 let newImage = UIImage(data: data)
