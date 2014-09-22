@@ -20,9 +20,13 @@
 		F824D65019C8BD9A00537282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F824D64F19C8BD9A00537282 /* Main.storyboard */; };
 		F824D65219C8BE7A00537282 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F824D65119C8BE7A00537282 /* Launch Screen.xib */; };
 		F87AFA4F19CB490E00EDEAE3 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87AFA4E19CB490E00EDEAE3 /* ImageCache.swift */; };
+		F87AFA5419CB6A9F00EDEAE3 /* EmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87AFA5319CB6A9F00EDEAE3 /* EmployeesViewModel.swift */; };
 		F87AFA7419CB736900EDEAE3 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AFA5E19CB733200EDEAE3 /* Quick.framework */; };
 		F87AFA7519CB737300EDEAE3 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AFA6D19CB733E00EDEAE3 /* Nimble.framework */; };
+		F87AFA7919CB74F200EDEAE3 /* EmployeesViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87AFA7819CB74F200EDEAE3 /* EmployeesViewModelSpec.swift */; };
 		F87B7A5319C8DBCD00D310EF /* EmployeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B7A5219C8DBCD00D310EF /* EmployeesViewController.swift */; };
+		F8D8071519D0764800E1D3A2 /* EmployeeCellViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D8071419D0764800E1D3A2 /* EmployeeCellViewModelSpec.swift */; };
+		F8D8071F19D0A27100E1D3A2 /* EmployeeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D8071E19D0A27100E1D3A2 /* EmployeeCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,10 +115,15 @@
 		F824D64F19C8BD9A00537282 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F824D65119C8BE7A00537282 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		F87AFA4E19CB490E00EDEAE3 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		F87AFA5319CB6A9F00EDEAE3 /* EmployeesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesViewModel.swift; sourceTree = "<group>"; };
 		F87AFA5519CB733200EDEAE3 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
 		F87AFA6519CB733E00EDEAE3 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
+		F87AFA7819CB74F200EDEAE3 /* EmployeesViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesViewModelSpec.swift; sourceTree = "<group>"; };
+		F87AFA7A19CB753600EDEAE3 /* UnitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F87B7A5219C8DBCD00D310EF /* EmployeesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesViewController.swift; sourceTree = "<group>"; };
 		F87B7A5919C8DEBC00D310EF /* roster-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "roster-Bridging-Header.h"; sourceTree = "<group>"; };
+		F8D8071419D0764800E1D3A2 /* EmployeeCellViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeCellViewModelSpec.swift; sourceTree = "<group>"; };
+		F8D8071E19D0A27100E1D3A2 /* EmployeeCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +196,7 @@
 		F824D61619C8BC2E00537282 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F87AFA5219CB6A8800EDEAE3 /* ViewModels */,
 				F824D61819C8BC2F00537282 /* Controllers */,
 				F824D61A19C8BC2F00537282 /* DataSources */,
 				F824D61C19C8BC2F00537282 /* Delegates */,
@@ -312,6 +322,7 @@
 				F87AFA6519CB733E00EDEAE3 /* Nimble.xcodeproj */,
 				F87AFA5519CB733200EDEAE3 /* Quick.xcodeproj */,
 				F824D64819C8BC3F00537282 /* UnitTests-Info.plist */,
+				F87AFA7A19CB753600EDEAE3 /* UnitTests-Bridging-Header.h */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -319,8 +330,18 @@
 		F824D64919C8BC3F00537282 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				F87AFA7619CB74C800EDEAE3 /* ViewModels */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		F87AFA5219CB6A8800EDEAE3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F87AFA5319CB6A9F00EDEAE3 /* EmployeesViewModel.swift */,
+				F8D8071E19D0A27100E1D3A2 /* EmployeeCellViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		F87AFA5619CB733200EDEAE3 /* Products */ = {
@@ -343,6 +364,15 @@
 				F87AFA7319CB733E00EDEAE3 /* Nimble-OSXTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F87AFA7619CB74C800EDEAE3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F87AFA7819CB74F200EDEAE3 /* EmployeesViewModelSpec.swift */,
+				F8D8071419D0764800E1D3A2 /* EmployeeCellViewModelSpec.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -602,8 +632,10 @@
 				F87AFA4F19CB490E00EDEAE3 /* ImageCache.swift in Sources */,
 				F802B5C719CA1A93009202FC /* TBEmployee+Gravatar.swift in Sources */,
 				F87B7A5319C8DBCD00D310EF /* EmployeesViewController.swift in Sources */,
+				F87AFA5419CB6A9F00EDEAE3 /* EmployeesViewModel.swift in Sources */,
 				F824D63819C8BC2F00537282 /* AppDelegate.swift in Sources */,
 				F802B5D119CA2250009202FC /* NSURLSession+FetchData.swift in Sources */,
+				F8D8071F19D0A27100E1D3A2 /* EmployeeCellViewModel.swift in Sources */,
 				F802B5CB19CA1B8D009202FC /* TBEmployeeRole+Printable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,6 +644,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D8071519D0764800E1D3A2 /* EmployeeCellViewModelSpec.swift in Sources */,
+				F87AFA7919CB74F200EDEAE3 /* EmployeesViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,6 +800,7 @@
 			baseConfigurationReference = F56827488694440AB6D812D4 /* Pods-unit_tests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -777,6 +812,8 @@
 				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UnitTests/Resources/UnitTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/roster.app/roster";
 			};
 			name = Debug;
@@ -786,6 +823,7 @@
 			baseConfigurationReference = F56827488694440AB6D812D4 /* Pods-unit_tests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -793,6 +831,7 @@
 				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UnitTests/Resources/UnitTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/roster.app/roster";
 			};
 			name = Release;
