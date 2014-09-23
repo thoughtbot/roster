@@ -18,10 +18,13 @@ class AsyncLoadingImageView: UIImageView {
         image = .None
 
         currentRequest = NSURLSession.fetchDataFromURL(url) { data in
-            dispatch_main_async {
-                let newImage = UIImage(data: data)
-                self.image = newImage
-                ImageCache.cacheImage(newImage, forURL: url)
+            let newImage: UIImage? = UIImage(data: data)
+
+            if let returnedImage = newImage {
+                dispatch_main_async {
+                    self.image = returnedImage
+                    ImageCache.cacheImage(returnedImage, forURL: url)
+                }
             }
         }
 
