@@ -1,4 +1,4 @@
-public struct EmployeesViewModel {
+public struct EmployeeListViewModel {
     let employees: [TBEmployee]
 
     public init(employees: [TBEmployee] = []) {
@@ -6,15 +6,15 @@ public struct EmployeesViewModel {
     }
 }
 
-public extension EmployeesViewModel {
+public extension EmployeeListViewModel {
     var numberOfEmployees: Int {
         return employees.count
     }
 
-    func employeeCellViewModelForIndexPath(indexPath: NSIndexPath) -> EmployeeCellViewModel? {
+    func employeeViewModelForIndexPath(indexPath: NSIndexPath) -> EmployeeViewModel? {
         let index = indexPath.item
         if index < numberOfEmployees {
-            return EmployeeCellViewModel(employee: employees[indexPath.row])
+            return EmployeeViewModel(employee: employees[indexPath.row])
         } else {
             return .None
         }

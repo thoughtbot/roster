@@ -1,4 +1,4 @@
-public struct EmployeeCellViewModel {
+public struct EmployeeViewModel {
     public let employee: TBEmployee
 
     public init(employee: TBEmployee) {
@@ -6,7 +6,7 @@ public struct EmployeeCellViewModel {
     }
 }
 
-public extension EmployeeCellViewModel {
+public extension EmployeeViewModel {
     var employeeName: String {
         return employee.fullName
     }

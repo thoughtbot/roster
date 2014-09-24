@@ -6,7 +6,7 @@ class EmployeeCell: UITableViewCell {
     @IBOutlet weak var employeeOfficeLabel: UILabel!
     @IBOutlet weak var employeeAvatarView: AsyncLoadingImageView!
 
-    func configureWithViewModel(viewModel: EmployeeCellViewModel) {
+    func configureWithViewModel(viewModel: EmployeeViewModel) {
         employeeNameLabel.text = viewModel.employeeName
         employeeRoleLabel.text = viewModel.employeeRole
         employeeOfficeLabel.text = viewModel.employeeOffice

@@ -1,11 +1,11 @@
 import roster
 
-class EmployeeCellViewModelSpec: QuickSpec {
+class EmployeeViewModelSpec: QuickSpec {
     override func spec() {
         describe("employeeName") {
             it("returns the full name of the employee") {
                 let employee = TBEmployee.fixture()
-                let viewModel = EmployeeCellViewModel(employee: employee)
+                let viewModel = EmployeeViewModel(employee: employee)
 
                 expect(viewModel.employeeName).to(equal("Jimmy McNulty"))
             }
@@ -14,7 +14,7 @@ class EmployeeCellViewModelSpec: QuickSpec {
         describe("employeeRole") {
             it("returns the display version of the employee's role") {
                 let employee = TBEmployee.fixture()
-                let viewModel = EmployeeCellViewModel(employee: employee)
+                let viewModel = EmployeeViewModel(employee: employee)
 
                 expect(viewModel.employeeRole).to(equal("iOS Developer"))
             }
@@ -23,7 +23,7 @@ class EmployeeCellViewModelSpec: QuickSpec {
         describe("employeeOffice") {
             it("returns the employee's office") {
                 let employee = TBEmployee.fixture()
-                let viewModel = EmployeeCellViewModel(employee: employee)
+                let viewModel = EmployeeViewModel(employee: employee)
 
                 expect(viewModel.employeeOffice).to(equal("Baltimore"))
             }
@@ -32,7 +32,7 @@ class EmployeeCellViewModelSpec: QuickSpec {
         describe("employeeAvatarURL") {
             it("returns the URL of the user's avatar") {
                 let employee = TBEmployee.fixture()
-                let viewModel = EmployeeCellViewModel(employee: employee)
+                let viewModel = EmployeeViewModel(employee: employee)
 
                 expect(viewModel.employeeAvatarURL).to(equal(employee.gravatarURL))
             }

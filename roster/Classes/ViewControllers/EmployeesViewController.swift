@@ -1,13 +1,13 @@
 import UIKit
 
 class EmployeesViewController: UITableViewController {
-    var viewModel: EmployeesViewModel = EmployeesViewModel()
+    var viewModel: EmployeeListViewModel = EmployeeListViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         TBTeamClient().fetchAllEmployeesWithCompletion { employees, _ in
-            self.viewModel = EmployeesViewModel(employees: employees as [TBEmployee])
+            self.viewModel = EmployeeListViewModel(employees: employees as [TBEmployee])
             self.tableView.reloadData()
         }
     }
@@ -19,7 +19,7 @@ class EmployeesViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("EmployeeCell", forIndexPath: indexPath) as EmployeeCell
 
-        if let cellViewModel = viewModel.employeeCellViewModelForIndexPath(indexPath) {
+        if let cellViewModel = viewModel.employeeViewModelForIndexPath(indexPath) {
             cell.configureWithViewModel(cellViewModel)
         }
 
