@@ -6,7 +6,7 @@ class EmployeesViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        TBTeamClient().fetchAllEmployeesWithCompletion { employees, _ in
+        TBTeamClient().fetchAllEmployeesWithCompletion { employees, error in
             self.viewModel = EmployeeListViewModel(employees: employees as [TBEmployee])
             self.tableView.reloadData()
         }
@@ -24,5 +24,10 @@ class EmployeesViewController: UITableViewController {
         }
 
         return cell
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destination = segue.destinationViewController as EmployeeDetailViewController
+        destination.viewModel = viewModel.employeeViewModelForIndexPath(tableView.indexPathForSelectedRow()!)
     }
 }

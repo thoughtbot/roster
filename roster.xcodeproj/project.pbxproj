@@ -19,6 +19,7 @@
 		F824D63F19C8BC2F00537282 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F824D62B19C8BC2F00537282 /* Images.xcassets */; };
 		F824D65019C8BD9A00537282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F824D64F19C8BD9A00537282 /* Main.storyboard */; };
 		F824D65219C8BE7A00537282 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F824D65119C8BE7A00537282 /* Launch Screen.xib */; };
+		F826024019D3537100B61007 /* EmployeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F826023F19D3537100B61007 /* EmployeeDetailViewController.swift */; };
 		F87AFA4F19CB490E00EDEAE3 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87AFA4E19CB490E00EDEAE3 /* ImageCache.swift */; };
 		F87AFA5419CB6A9F00EDEAE3 /* EmployeeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87AFA5319CB6A9F00EDEAE3 /* EmployeeListViewModel.swift */; };
 		F87AFA7419CB736900EDEAE3 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AFA5E19CB733200EDEAE3 /* Quick.framework */; };
@@ -114,6 +115,7 @@
 		F824D64819C8BC3F00537282 /* UnitTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		F824D64F19C8BD9A00537282 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F824D65119C8BE7A00537282 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		F826023F19D3537100B61007 /* EmployeeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeDetailViewController.swift; sourceTree = "<group>"; };
 		F87AFA4E19CB490E00EDEAE3 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		F87AFA5319CB6A9F00EDEAE3 /* EmployeeListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeListViewModel.swift; sourceTree = "<group>"; };
 		F87AFA5519CB733200EDEAE3 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				F87B7A5219C8DBCD00D310EF /* EmployeesViewController.swift */,
+				F826023F19D3537100B61007 /* EmployeeDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -637,6 +640,7 @@
 				F802B5D119CA2250009202FC /* NSURLSession+FetchData.swift in Sources */,
 				F8D8071F19D0A27100E1D3A2 /* EmployeeViewModel.swift in Sources */,
 				F802B5CB19CA1B8D009202FC /* TBEmployeeRole+Printable.swift in Sources */,
+				F826024019D3537100B61007 /* EmployeeDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

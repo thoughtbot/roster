@@ -7,9 +7,9 @@ class EmployeeCell: UITableViewCell {
     @IBOutlet weak var employeeAvatarView: AsyncLoadingImageView!
 
     func configureWithViewModel(viewModel: EmployeeViewModel) {
-        employeeNameLabel.text = viewModel.employeeName
-        employeeRoleLabel.text = viewModel.employeeRole
-        employeeOfficeLabel.text = viewModel.employeeOffice
-        employeeAvatarView.setImageWithURL(viewModel.employeeAvatarURL)
+        employeeNameLabel.text = viewModel.displayName
+        employeeRoleLabel.text = viewModel.role
+        employeeOfficeLabel.text = viewModel.officeName
+        employeeAvatarView.setImageWithURL(viewModel.avatarURL)
     }
 }

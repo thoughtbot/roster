@@ -2,39 +2,93 @@ import roster
 
 class EmployeeViewModelSpec: QuickSpec {
     override func spec() {
-        describe("employeeName") {
+        describe("displayName") {
             it("returns the full name of the employee") {
                 let employee = TBEmployee.fixture()
                 let viewModel = EmployeeViewModel(employee: employee)
 
-                expect(viewModel.employeeName).to(equal("Jimmy McNulty"))
+                expect(viewModel.displayName).to(equal("Jimmy McNulty"))
             }
         }
 
-        describe("employeeRole") {
+        describe("role") {
             it("returns the display version of the employee's role") {
                 let employee = TBEmployee.fixture()
                 let viewModel = EmployeeViewModel(employee: employee)
 
-                expect(viewModel.employeeRole).to(equal("iOS Developer"))
+                expect(viewModel.role).to(equal("iOS Developer"))
             }
         }
 
-        describe("employeeOffice") {
+        describe("officeName") {
             it("returns the employee's office") {
                 let employee = TBEmployee.fixture()
                 let viewModel = EmployeeViewModel(employee: employee)
 
-                expect(viewModel.employeeOffice).to(equal("Baltimore"))
+                expect(viewModel.officeName).to(equal("Baltimore"))
             }
         }
 
-        describe("employeeAvatarURL") {
+        describe("avatarURL") {
             it("returns the URL of the user's avatar") {
                 let employee = TBEmployee.fixture()
                 let viewModel = EmployeeViewModel(employee: employee)
 
-                expect(viewModel.employeeAvatarURL).to(equal(employee.gravatarURL))
+                expect(viewModel.avatarURL).to(equal(employee.gravatarURL))
+            }
+        }
+
+        describe("email") {
+            it("returns the employee's email address") {
+                let employee = TBEmployee.fixture()
+                let viewModel = EmployeeViewModel(employee: employee)
+
+                expect(viewModel.email).to(equal(employee.emailAddress))
+            }
+        }
+
+        describe("phoneNumber") {
+            it("returns the employee's phone number") {
+                let employee = TBEmployee.fixture()
+                let viewModel = EmployeeViewModel(employee: employee)
+
+                expect(viewModel.phoneNumber).to(equal(employee.phoneNumber))
+            }
+        }
+
+        describe("website") {
+            it("returns the employee's personal website") {
+                let employee = TBEmployee.fixture()
+                let viewModel = EmployeeViewModel(employee: employee)
+
+                expect(viewModel.website).to(equal("en.wikipedia.org/wiki/Jimmy_McNulty"))
+            }
+        }
+
+        describe("twitterHandle") {
+            it("returns the employee's formatted Twitter handle") {
+                let employee = TBEmployee.fixture()
+                let viewModel = EmployeeViewModel(employee: employee)
+
+                expect(viewModel.twitterHandle).to(equal("@McNultweet"))
+            }
+        }
+
+        describe("githubHandle") {
+            it("returns the employee's formatted GitHub handle") {
+                let employee = TBEmployee.fixture()
+                let viewModel = EmployeeViewModel(employee: employee)
+
+                expect(viewModel.githubHandle).to(equal("@McNulty"))
+            }
+        }
+
+        describe("hireDate") {
+            it("returns the employee's hire date") {
+                let employee = TBEmployee.fixture()
+                let viewModel = EmployeeViewModel(employee: employee)
+
+                expect(viewModel.hireDate).to(equal("Hire Date: 12/31/69"))
             }
         }
     }
