@@ -5,3 +5,6 @@ bundle install
 ls ~/.cocoapods/repos | grep thoughtbot &>/dev/null || pod repo add thoughtbot git@github.com:thoughtbot/cocoapod-specs.git
 
 pod install
+
+git submodule update --init --recursive
+
