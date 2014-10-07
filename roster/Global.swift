@@ -23,12 +23,8 @@ func <^><A, B>(f: A -> B, a: A?) -> B? {
 infix operator <*> { associativity left }
 
 func <*><A, B>(f: (A -> B)?, a: A?) -> B? {
-    switch a {
-    case .Some(let x):
-        if let fx = f {
-            return fx(x)
-        }
-        fallthrough
+    switch f {
+    case .Some(let fx): return fx <^> a
     case .None: return .None
     }
 }
