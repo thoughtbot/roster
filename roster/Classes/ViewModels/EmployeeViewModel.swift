@@ -51,14 +51,12 @@ public extension EmployeeViewModel {
 private extension EmployeeViewModel {
     func handleForUsername(name: String?) -> String {
         let handle = usernameFormat <^> name
-
         return handle ?? ""
     }
 
     func displayWebsiteForURL(url: NSURL?) -> String {
-        let string = websiteFormat <^> url?.host <*> url?.path
-
-        return string ?? ""
+        let websiteString = websiteFormat <^> url?.host <*> url?.path
+        return websiteString ?? ""
     }
 }
 

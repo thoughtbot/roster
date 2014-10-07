@@ -6,8 +6,8 @@ infix operator >>- { associativity left precedence 150 }
 
 func >>-<A, B>(a: A?, f: A -> B?) -> B? {
     switch a {
-    case let .Some(x): return f(x)
-    default: return .None
+    case .Some(let x): return f(x)
+    case .None: return .None
     }
 }
 
