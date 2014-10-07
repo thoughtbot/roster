@@ -28,25 +28,44 @@ public extension EmployeeViewModel {
     }
 
     var website: String {
-        let url = employee.personalWebsiteURL
-        return "\(url.host)\(url.path)"
+        return displayWebsiteForURL(employee.personalWebsiteURL)
     }
 
     var twitterHandle: String {
-        return "@\(employee.twitterUsername)"
+        return handleForUsername(employee.twitterUsername)
     }
 
     var githubHandle: String {
-        return "@\(employee.githubUsername)"
+        return handleForUsername(employee.githubUsername)
     }
 
     var hireDate: String {
-        let formatter = NSDateFormatter()
-        formatter.dateFormat = "'Hire Date:' M/d/yy"
-        return formatter.stringFromDate(employee.startDate)
+        return Formatters.hireStringFromDate(employee.startDate)
     }
 
     var avatarURL: NSURL {
         return employee.gravatarURL
     }
+}
+
+private extension EmployeeViewModel {
+    func handleForUsername(name: String?) -> String {
+        let handle = usernameFormat <^> name
+
+        return handle ?? ""
+    }
+
+    func displayWebsiteForURL(url: NSURL?) -> String {
+        let string = websiteFormat <^> url?.host <*> url?.path
+
+        return string ?? ""
+    }
+}
+
+private func websiteFormat(host: String)(path: String) -> String {
+    return "\(host)\(path)"
+}
+
+private func usernameFormat(name: String) -> String {
+    return "@\(name)"
 }

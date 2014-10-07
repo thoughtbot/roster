@@ -26,6 +26,7 @@
 		F87AFA7519CB737300EDEAE3 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AFA6D19CB733E00EDEAE3 /* Nimble.framework */; };
 		F87AFA7919CB74F200EDEAE3 /* EmployeeListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87AFA7819CB74F200EDEAE3 /* EmployeeListViewModelSpec.swift */; };
 		F87B7A5319C8DBCD00D310EF /* EmployeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87B7A5219C8DBCD00D310EF /* EmployeesViewController.swift */; };
+		F89540A819E44EB1001A93B5 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89540A719E44EB1001A93B5 /* Formatters.swift */; };
 		F8D8071519D0764800E1D3A2 /* EmployeeViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D8071419D0764800E1D3A2 /* EmployeeViewModelSpec.swift */; };
 		F8D8071F19D0A27100E1D3A2 /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D8071E19D0A27100E1D3A2 /* EmployeeViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -124,6 +125,7 @@
 		F87AFA7A19CB753600EDEAE3 /* UnitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F87B7A5219C8DBCD00D310EF /* EmployeesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesViewController.swift; sourceTree = "<group>"; };
 		F87B7A5919C8DEBC00D310EF /* roster-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "roster-Bridging-Header.h"; sourceTree = "<group>"; };
+		F89540A719E44EB1001A93B5 /* Formatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		F8D8071419D0764800E1D3A2 /* EmployeeViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeViewModelSpec.swift; sourceTree = "<group>"; };
 		F8D8071E19D0A27100E1D3A2 /* EmployeeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				F87AFA4E19CB490E00EDEAE3 /* ImageCache.swift */,
+				F89540A719E44EB1001A93B5 /* Formatters.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -630,6 +633,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F802B5CD19CA1BBA009202FC /* AsyncLoadingImageView.swift in Sources */,
+				F89540A819E44EB1001A93B5 /* Formatters.swift in Sources */,
 				F802B5C919CA1AE9009202FC /* Global.swift in Sources */,
 				F802B5CF19CA1C10009202FC /* EmployeeCell.swift in Sources */,
 				F87AFA4F19CB490E00EDEAE3 /* ImageCache.swift in Sources */,

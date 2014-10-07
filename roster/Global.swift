@@ -10,3 +10,25 @@ func >>-<A, B>(a: A?, f: A -> B?) -> B? {
     default: return .None
     }
 }
+
+infix operator <^> { associativity left }
+
+func <^><A, B>(f: A -> B, a: A?) -> B? {
+    switch a {
+    case .Some(let x): return f(x)
+    case .None: return .None
+    }
+}
+
+infix operator <*> { associativity left }
+
+func <*><A, B>(f: (A -> B)?, a: A?) -> B? {
+    switch a {
+    case .Some(let x):
+        if let fx = f {
+            return fx(x)
+        }
+        fallthrough
+    case .None: return .None
+    }
+}

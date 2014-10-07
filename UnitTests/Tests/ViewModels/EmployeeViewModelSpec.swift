@@ -63,6 +63,16 @@ class EmployeeViewModelSpec: QuickSpec {
 
                 expect(viewModel.website).to(equal("en.wikipedia.org/wiki/Jimmy_McNulty"))
             }
+
+            context("when the url is nil") {
+                it("returns an empty string") {
+                    var employee = TBEmployee.fixture()
+                    employee.personalWebsiteURL = .None
+                    let viewModel = EmployeeViewModel(employee: employee)
+
+                    expect (viewModel.website).to(equal(""))
+                }
+            }
         }
 
         describe("twitterHandle") {
@@ -71,6 +81,16 @@ class EmployeeViewModelSpec: QuickSpec {
                 let viewModel = EmployeeViewModel(employee: employee)
 
                 expect(viewModel.twitterHandle).to(equal("@McNultweet"))
+            }
+
+            context("when the employee doesn't have a Twitter handle") {
+                it("returns an empty string") {
+                    var employee = TBEmployee.fixture()
+                    employee.twitterUsername = .None
+                    let viewModel = EmployeeViewModel(employee: employee)
+
+                    expect(viewModel.twitterHandle).to(equal(""))
+                }
             }
         }
 
@@ -81,6 +101,16 @@ class EmployeeViewModelSpec: QuickSpec {
 
                 expect(viewModel.githubHandle).to(equal("@McNulty"))
             }
+
+            context("when the employee doesn't have a GitHub handle") {
+                it("returns an empty string") {
+                    var employee = TBEmployee.fixture()
+                    employee.githubUsername = .None
+                    let viewModel = EmployeeViewModel(employee: employee)
+
+                    expect(viewModel.githubHandle).to(equal(""))
+                }
+            }
         }
 
         describe("hireDate") {
@@ -89,6 +119,16 @@ class EmployeeViewModelSpec: QuickSpec {
                 let viewModel = EmployeeViewModel(employee: employee)
 
                 expect(viewModel.hireDate).to(equal("Hire Date: 12/31/69"))
+            }
+
+            context("when the employee's hire date is nil") {
+                it("returns an empty string") {
+                    var employee = TBEmployee.fixture()
+                    employee.startDate = .None
+                    let viewModel = EmployeeViewModel(employee: employee)
+
+                    expect(viewModel.hireDate).to(equal(""))
+                }
             }
         }
     }
