@@ -6,7 +6,7 @@ class EmployeesViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        TBTeamClient().fetchAllEmployeesWithCompletion { employees, error in
+        TBTeamClient().fetchAllEmployeesWithCompletion { employees, _ in
             self.viewModel = EmployeeListViewModel(employees: employees as [TBEmployee])
             self.tableView.reloadData()
         }
