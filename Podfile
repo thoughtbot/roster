@@ -1,3 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'git@github.com:thoughtbot/cocoapod-specs.git'
+
 platform :ios, '7.0'
 
 pod 'TBDirectory'
